@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meu Fitness</title>
+<meta name="description" content="Painel pessoal de treino e recuperação, de uso exclusivo do autor.">
+<style>
+  :root { --fundo: #f7f7f5; --texto: #1d1d1b; --suave: #5c5c58; --linha: #deddd8; --link: #1f5fbf; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fundo: #161615; --texto: #ecebe6; --suave: #a6a59f; --linha: #33332f; --link: #7fb0ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 22px 64px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  .sub { color: var(--suave); margin: 0 0 28px; }
+  ul { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  a { color: var(--link); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--linha); color: var(--suave); font-size: .92rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Meu Fitness</h1>
+  <p class="sub">Painel pessoal de treino e recuperação, de uso exclusivo do autor.</p>
+
+  <h2>O que é</h2>
+  <p>O Meu Fitness reúne num só painel os dados de treino e recuperação do autor, vindos de diferentes relógios e aplicativos: Garmin, Samsung Health (por meio do Google Health), Strava e Intervals.icu. Com ele, o autor acompanha corrida, natação, força, sono e sinais vitais, vê tendências ao longo das semanas e compara as medidas de dispositivos diferentes.</p>
+
+  <h2>Como usa a Google Health API</h2>
+  <ul>
+    <li>Somente leitura: o app não grava nem altera nada na conta Google.</li>
+    <li>Lê apenas a conta do próprio autor: sono, métricas de saúde e medidas, e atividade.</li>
+    <li>Um coletor automático busca esses dados periodicamente e os leva para o painel pessoal, onde são comparados com os do Garmin.</li>
+  </ul>
+
+  <h2>Para quem é</h2>
+  <p>É um projeto pessoal. Não é um serviço aberto ao público: não há cadastro, login nem acesso para outras pessoas.</p>
+
+  <p>Detalhes sobre quais dados são acessados e como são tratados estão na <a href="privacidade.html">Política de privacidade</a>.</p>
+
+  <footer>Meu Fitness · projeto pessoal · <a href="privacidade.html">Política de privacidade</a></footer>
+</main>
+</body>
+</html>
